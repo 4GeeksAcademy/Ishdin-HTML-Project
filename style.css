@@ -1,0 +1,216 @@
+/* ============================= */
+/* 1. GLOBAL / RESET STYLES      */
+/* ============================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  color: #2b2b2b;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Reusable section width/padding, used by hero and page sections */
+.hero-content,
+.page-section article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+
+/* ============================= */
+/* 2. HEADER / NAVIGATION        */
+/* ============================= */
+
+.site-header {
+  background-color: #1f2937;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-list a {
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  color: #93c5fd;
+  outline: none;
+}
+
+
+/* ============================= */
+/* 3. HERO SECTION (the "cover") */
+/* ============================= */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #374151, #111827);
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #d1d5db;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #93c5fd;
+  color: #111827;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #60a5fa;
+  outline: none;
+}
+
+
+/* ============================= */
+/* 4. PAGE SECTIONS (About/Career/Shows) */
+/* ============================= */
+
+.page-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.alt-background {
+  background-color: #f3f4f6;
+}
+
+.page-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-section p {
+  margin-bottom: 1rem;
+}
+
+
+/* Career list */
+.career-list li {
+  margin-bottom: 1.5rem;
+}
+
+.career-list h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: #1f2937;
+}
+
+
+/* Upcoming shows list */
+.shows-list li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.show-date {
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.show-venue {
+  color: #4b5563;
+}
+
+
+/* ============================= */
+/* 5. FOOTER                     */
+/* ============================= */
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #1f2937;
+  color: #d1d5db;
+  font-size: 0.9rem;
+}
+
+
+/* ============================= */
+/* 6. RESPONSIVE ADJUSTMENTS     */
+/* ============================= */
+
+@media (max-width: 600px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-list {
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .shows-list li {
+    flex-direction: column;
+  }
+}
