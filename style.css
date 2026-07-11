@@ -131,6 +131,8 @@ img {
   display: flex;
   align-items: center;
   padding: 3rem 0;
+  content-visibility: auto;
+  contain-intrinsic-size: 1000px;
 }
 
 .alt-background {
